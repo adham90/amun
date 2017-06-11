@@ -103,7 +103,7 @@ describe Amun::Helpers::Colors do
 end
 
 describe String do
-  subject { "string to output" }
+  subject { 'string to output' }
 
   let(:style) { Amun::Helpers::Colors::REVERSE }
   let(:color) { :black }

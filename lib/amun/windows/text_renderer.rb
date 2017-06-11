@@ -30,7 +30,7 @@ module Amun
                          when "\n"
                            " \n"
                          when nil
-                           " "
+                           ' '
                          else
                            buffer[buffer.point]
                          end

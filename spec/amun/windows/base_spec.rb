@@ -11,7 +11,7 @@ describe Amun::Windows::Base do
     let(:new_size) { Rect.new(left: 10, top: 10, width: 1000, height: 1000) }
     let(:curses_window) { subject.send :curses_window }
 
-    it "should call curses resize and move" do
+    it 'should call curses resize and move' do
       expect(curses_window).to receive(:resize)
       expect(curses_window).to receive(:move)
       subject.size = new_size

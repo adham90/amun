@@ -37,7 +37,7 @@ module Amun
         bind "\e", self, :cancel
         bind "\C-g", self, :cancel
         bind "\n", self, :done
-        bind "done", self, :exec_done_block
+        bind 'done', self, :exec_done_block
       end
 
       # attach the mini buffer to a frame of your choice,
@@ -82,13 +82,13 @@ module Amun
 
       def cancel(*)
         detach
-        trigger("cancel")
+        trigger('cancel')
         buffer.clear
       end
 
       def done(*)
         detach
-        trigger("done")
+        trigger('done')
         buffer.clear
       end
 

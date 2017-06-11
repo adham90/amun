@@ -1,7 +1,6 @@
 require_relative '../../spec_helper'
 
 describe Amun::Windows::Frame do
-
   before do
     Amun::EventManager.clear
   end
@@ -17,7 +16,7 @@ describe Amun::Windows::Frame do
       before { subject.window = nil }
 
       it 'handles exceptions' do
-        expect{ subject.render }.not_to raise_error
+        expect { subject.render }.not_to raise_error
       end
     end
   end
@@ -53,7 +52,7 @@ describe Amun::Windows::Frame do
       before { subject.window = nil }
 
       it 'handles exceptions' do
-        expect{ subject.trigger('event') }.not_to raise_error
+        expect { subject.trigger('event') }.not_to raise_error
       end
     end
   end

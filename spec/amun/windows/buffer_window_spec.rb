@@ -9,7 +9,7 @@ describe Amun::Windows::BufferWindow do
     let(:buffer) { double }
 
     it 'changes the buffer' do
-      expect { subject.display_buffer(buffer) }.to change{ subject.buffer }.to buffer
+      expect { subject.display_buffer(buffer) }.to change { subject.buffer }.to buffer
     end
   end
 
@@ -21,7 +21,7 @@ describe Amun::Windows::BufferWindow do
     before { allow(Amun::Buffer).to receive(:current).and_return(current_buffer) }
 
     it 'changes the buffer to Buffer.current' do
-      expect { subject.display_current_buffer }.to change{ subject.buffer }.from(old_buffer).to current_buffer
+      expect { subject.display_current_buffer }.to change { subject.buffer }.from(old_buffer).to current_buffer
     end
   end
 

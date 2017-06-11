@@ -29,12 +29,12 @@ describe Amun::Helpers::Keyboard do
       end
 
       context 'followed by non-keyboard character' do
-        let(:input) { ["\e", "resize"] }
+        let(:input) { ["\e", 'resize'] }
         its(:char) { is_expected.to eq "\e resize" }
       end
 
       context 'followed by valid character' do
-        let(:input) { ["\e", "x"] }
+        let(:input) { ["\e", 'x'] }
         its(:char) { is_expected.to eq "\M-x" }
       end
 
